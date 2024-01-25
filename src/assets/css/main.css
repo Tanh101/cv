@@ -1,0 +1,148 @@
+html {
+    scroll-behavior: smooth;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    transform: translateX(-50%);
+}
+
+.header {
+    margin-left: 5rem;
+    position: relative;
+    z-index: 999;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.2rem;
+    top: 0;
+    left: 50%;
+    height: 4rem;
+    justify-content: space-around;
+    position: fixed;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    width: 50%;
+    font-size: 1.25rem;
+    border-radius: 1.5rem;
+    background-color: #0f0907;
+    top: 4px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    /* .navbar {
+        width: 50%;
+        font-size: 1.25rem;
+        border-radius: 1.5rem;
+        background-color: #0f0907;
+        top: 4px;
+    } */
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: medium;
+    transition: transform 0.5s ease-in-out;
+    color: black;
+}
+
+.content {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    font-weight: extrabold;
+    padding: 0 2px;
+}
+
+.name p {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+
+.name span {
+    font-size: 2rem;
+}
+
+.name span.text-blue-400 {
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    color: #3498db;
+    opacity: 1;
+}
+
+.last-name {
+    font-size: 1.5rem;
+    color: #3498db;
+    opacity: 1;
+    font-weight: 800;
+}
+
+.ava-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 5rem;
+    width: 15rem;
+    height: 15rem;
+}
+
+.theme {
+    left: 0;
+    z-index: 999;
+    position: fixed;
+    cursor: pointer;
+    background-color: #0f0907;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
