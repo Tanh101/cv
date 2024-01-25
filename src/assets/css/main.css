@@ -1,11 +1,14 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
     scroll-behavior: smooth;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-}
-
-.navbar {
-    transform: translateX(-50%);
+    font-family: 'Popins', sans-serif;
+    background-color: rgb(208, 225, 235);
+    color: black;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -17,12 +20,12 @@ html {
 .navbar {
     display: flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: 20px;
     font-weight: bold;
     padding: 0.2rem;
     top: 0;
     left: 50%;
-    height: 4rem;
+    height: 3.5rem;
     justify-content: space-around;
     position: fixed;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -30,23 +33,29 @@ html {
     width: 50%;
     font-size: 1.25rem;
     border-radius: 1.5rem;
-    background-color: #0f0907;
-    top: 4px;
+    top: 10px;
+    transform: translateX(-50%);
+    background-color: #f0f0f0;
+}
+
+
+.navbar a:hover {
+    color: #005b96;
 }
 
 .navbar a {
-    color: white;
     text-decoration: none;
+    color: black;
 }
 
-@media (min-width: 768px) {
-    /* .navbar {
-        width: 50%;
-        font-size: 1.25rem;
-        border-radius: 1.5rem;
-        background-color: #0f0907;
-        top: 4px;
-    } */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #f0f0f0;
+        width: 100%;
+        border-radius: 0;
+        top: 0;
+        font-size: 18px;
+    }
 }
 
 .home {
@@ -61,15 +70,19 @@ html {
 .content {
     text-align: center;
     font-size: 1.5rem;
-    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4rem;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+}
+
+.hello {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
 }
 
 .name {
@@ -78,35 +91,36 @@ html {
     align-items: center;
     width: 40%;
     font-weight: extrabold;
-    padding: 0 2px;
 }
 
-.name p {
-    margin: 2rem 0;
-    font-size: 1.5rem;
-}
-
-.name span {
-    font-size: 2rem;
-}
-
-.name span.text-blue-400 {
-    margin-left: 0.5rem;
-    font-size: 2rem;
-    color: #3498db;
-    opacity: 1;
+.intro {
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .last-name {
-    font-size: 1.5rem;
+    font-size: 36px;
     color: #3498db;
     opacity: 1;
     font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+}
+
+.work-title {
+    margin: 68px 0;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.resume {
+    margin: 0 10px;
 }
 
 .ava-section {
     display: flex;
-    flex-direction: row;
 }
 
 .avatar {
@@ -117,6 +131,25 @@ html {
     font-size: 5rem;
     width: 15rem;
     height: 15rem;
+    margin-left: 60px;
+}
+
+.download {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #3fb0fc;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.download:hover {
+    background-color: #98d6ff;
+    cursor: pointer;
 }
 
 .theme {
@@ -127,15 +160,67 @@ html {
     background-color: #0f0907;
 }
 
+#about {
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.9;
+    padding: 0 0 100px 0px;
+}
+
 .about {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    font-weight: 800;
+    opacity: 0.9;
+    padding: 100px 0 100px 0;
+    
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0.9;
+    margin: 0 25%;
+    font-family: 'Popins', sans-serif;
 }
 
 .projects {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    font-weight: 800;
+    opacity: 0.9;
 }
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    font-size: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+.project-img {
+    width: 400px;
+    height: 300px;
+}   
 
 .skills {
     display: flex;
