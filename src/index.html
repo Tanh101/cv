@@ -19,7 +19,7 @@
 
 <body>
     <header class='header'>
-        <nav class='navbar text-2xl'>
+        <nav class='navbar'>
             <a href="#">
                 Home
             </a>
@@ -38,7 +38,7 @@
         </nav>
     </header>
     <section id="#" class='home'>
-        <div class='content mt-20'>
+        <div class='content'>
             <div class='ava-section'>
                 <div class="name">
                     <p class="hello">Xin Chao, </p>
@@ -47,15 +47,15 @@
                         <span class='last-name'>Tanh</span>
                     </div>
                 </div>
-                <div class="avatar mx-10">
-                    <img src="./assets/imgs/avatar.png" alt="" />
+                <div class="avatar">
+                    <img src="./assets/imgs/avatar.png" alt="avatar" />
                 </div>
             </div>
-            <p class="work-title my-32 text-2xl font-bold">
+            <p class="work-title">
                 Web Developer | Blogger
             </p>
             <div class='download' onClick={handleDownload}>
-                <i class="fa-solid fa-arrow-down" style="font-size: 15px;"></i>
+                <i class="download-icon fa-solid fa-arrow-down"></i>
                 <p class="resume">
                     My Resume
                 </p>
@@ -67,159 +67,176 @@
             About
         </div>
         <div class="about-content">
-            <div class="img-container max-w-60 max-h-60 flex py-6">
-                <div class="overflow-hidden w-full h-full">
-                    <img class="object-cover w-full h-full" src="./assets/imgs/myHome1.png" alt="">
+            <div class="img-container">
+                <div>
+                    <img class="guitar" src="./assets/imgs/ava.jpg" alt="guitar-avatar">
                 </div>
             </div>
 
-
             <div class="education">
-                <div class="my-4">
+                <div class="university">
                     <span>I'm a student at Da Nang University of Science and Technology - GPA: 3.75</span>
                 </div>
-                <div class="my-4">
+                <div>
                     <span>Graduation Date:</span>
-                    <span style="font-weight: 700;">Jul 2024</span>
+                    <span class="graduation-date">Jul 2024</span>
                 </div>
 
-                <div class="my-4">
-                    <p>My experience is mostly about full-stack development but I also explore other fields like DevOps
+                <div class="experience">
+                    <p>My experience is mostly about full-stack development but I also explore other fields like DevOps.
                     </p>
                 </div>
-                <p class="my-4">Besides from programming, I also do coding contest on Leetcode, listen to music, playing
+                <p>Besides from programming, I also playing guitar, listen to music, playing
                     football,
                     and create
-                    content for my blogs</p>
+                    content for my blogs.</p>
             </div>
         </div>
     </section>
     <section id="projects" class="projects">
-        <div class="mb-40">
-            Project
+        <div class="project">
+            Projects
         </div>
-        <div class="items mb-24 flex-wrap text-xl">
-            <div class="item max-w-lg m-8 shadow-lg transition-transform transform hover:scale-110 ">
-                <img class="project-img w-auto h-80 mt-2" src="./assets/imgs/shibalearn.png" alt="">
-                <div class="p-4">
-                    <p class="my-3 text-xl ">Shibasensei</p>
-                    <div class="icons flex items-center text-center flex-wrap">
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/laravel.png" alt="">
+        <div class="items">
+            <div class="item">
+                <img class="project-img" src="./assets/imgs/shibalearn.png" alt="">
+                <div class="project-content">
+                    <p class="project-name">Shibasensei</p>
+                    <div class="icons">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/laravel.png" alt="">
                             <span>Laravel</span>
                         </div>
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/ReactJS.png" alt="">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/react.png" alt="">
                             <span>ReactJS</span>
                         </div>
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/mysqlworkbench_93532.png" alt="">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/mysqlworkbench_93532.png" alt="">
                             <span>MySQL</span>
                         </div>
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/flask.png" alt="">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/flask.png" alt="">
                             <span>Flask</span>
                         </div>
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/docker.png" alt="">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/docker.png" alt="">
                             <span>Docker</span>
                         </div>
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/aws.png" alt="">
-                            <span>AWS</span>
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/aws.png" alt="">
+                            <span>EC2</span>
                         </div>
                     </div>
-                    <p class="font-normal text-lg w-full">Website helps users learn Japanese vocabulary in lessons
+                    <p class="description">Website helps users learn Japanese vocabulary in lessons
                         related
                         to topics. In addition, it also provides dictionary lookup capabilities using AI Japanese OCR
                         using CNN. </p>
                 </div>
             </div>
-            <div class="item max-w-lg m-8 shadow-lg transition-transform transform hover:scale-110">
-                <img class="project-img w-auto h-80 mt-2" src="./assets/imgs/shibalearn.png" alt="">
-                <div class="p-4">
-                    <p class="my-3 text-xl ">Shibasensei</p>
-                    <div class="icons flex items-center text-center flex-wrap">
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/laravel.png" alt="">
+            <div class="item">
+                <img class="project-img" src="./assets/imgs/shibalearn.png" alt="">
+                <div class="project-content">
+                    <p class="project-name">Shibasensei</p>
+                    <div class="icons">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/laravel.png" alt="">
                             <span>Laravel</span>
                         </div>
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/ReactJS.png" alt="">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/react.png" alt="">
                             <span>ReactJS</span>
                         </div>
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/mysqlworkbench_93532.png" alt="">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/mysqlworkbench_93532.png" alt="">
                             <span>MySQL</span>
                         </div>
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/flask.png" alt="">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/flask.png" alt="">
                             <span>Flask</span>
                         </div>
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/docker.png" alt="">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/docker.png" alt="">
                             <span>Docker</span>
                         </div>
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/aws.png" alt="">
-                            <span>AWS</span>
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/aws.png" alt="">
+                            <span>EC2</span>
                         </div>
                     </div>
-                    <p class="font-normal text-lg w-full">Website helps users learn Japanese vocabulary in lessons
+                    <p class="description">Website helps users learn Japanese vocabulary in lessons
                         related
                         to topics. In addition, it also provides dictionary lookup capabilities using AI Japanese OCR
                         using CNN. </p>
                 </div>
             </div>
-            <div class="item max-w-xl m-8 shadow-lg transition-transform transform hover:scale-110">
-                <img class="project-img w-auto h-80 mt-2" src="./assets/imgs/shibalearn.png" alt="">
-                <div class="p-4">
-                    <p class="my-3 text-xl ">Shibasensei</p>
-                    <div class="icons flex items-center text-center flex-wrap">
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/laravel.png" alt="">
+            <div class="item">
+                <img class="project-img" src="./assets/imgs/shibalearn.png" alt="">
+                <div class="project-content">
+                    <p class="project-name">Shibasensei</p>
+                    <div class="icons">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/laravel.png" alt="">
                             <span>Laravel</span>
                         </div>
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/ReactJS.png" alt="">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/react.png" alt="">
                             <span>ReactJS</span>
                         </div>
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/mysqlworkbench_93532.png" alt="">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/mysqlworkbench_93532.png" alt="">
                             <span>MySQL</span>
                         </div>
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/flask.png" alt="">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/flask.png" alt="">
                             <span>Flask</span>
                         </div>
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/docker.png" alt="">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/docker.png" alt="">
                             <span>Docker</span>
                         </div>
-                        <div
-                            class="icon w-auto p-3 text-lg  h-8 flex bg-slate-300 mr-3 mb-5 rounded-xl text-center items-center">
-                            <img class="w-5 mr-3" src="./assets/imgs/aws.png" alt="">
-                            <span>AWS</span>
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/aws.png" alt="">
+                            <span>EC2</span>
                         </div>
                     </div>
-                    <p class="font-normal text-lg w-full">Website helps users learn Japanese vocabulary in lessons
+                    <p class="description">Website helps users learn Japanese vocabulary in lessons
+                        related
+                        to topics. In addition, it also provides dictionary lookup capabilities using AI Japanese OCR
+                        using CNN. </p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="project-img" src="./assets/imgs/shibalearn.png" alt="">
+                <div class="project-content">
+                    <p class="project-name">Shibasensei</p>
+                    <div class="icons">
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/laravel.png" alt="">
+                            <span>Laravel</span>
+                        </div>
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/react.png" alt="">
+                            <span>ReactJS</span>
+                        </div>
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/mysqlworkbench_93532.png" alt="">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/flask.png" alt="">
+                            <span>Flask</span>
+                        </div>
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/docker.png" alt="">
+                            <span>Docker</span>
+                        </div>
+                        <div class="icon">
+                            <img class="icon-img" src="./assets/imgs/aws.png" alt="">
+                            <span>EC2</span>
+                        </div>
+                    </div>
+                    <p class="description">Website helps users learn Japanese vocabulary in lessons
                         related
                         to topics. In addition, it also provides dictionary lookup capabilities using AI Japanese OCR
                         using CNN. </p>
@@ -228,58 +245,93 @@
 
         </div>
     </section>
-    <section id="skills">
-        <div class="skills mb-10">
+    <section id="skills" class="skills-section">
+        <div class="skills">
             Skills
         </div>
-        <div class="flex flex-col mx-60 mb-10 bg-gradient-to-r from-[#f5fdff] to-[#fdffff] h-400 rounded-2xl">
-            <div class="frontend p-10">
-                <div class="py-10 text-2xl font-bold">Frontend</div>
-                <div class="flex flex-row w-full">
-                    <div
-                        class="skill w-auto p-10 text-lg  h-8 flex bg-white shadow-lg font-medium text-xl mr-3 mb-5 rounded-2xl text-center items-center">
-                        <img class="w-16 object-cover mr-3" src="./assets/imgs/ReactJS.png" alt="">
+        <div class="skills-container ">
+            <div class="skills-title">
+                <div class="skills-role">Frontend</div>
+                <div class="skills-icons">
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/ReactJS.png" alt="">
                         <span>ReactJS</span>
                     </div>
-                    <div
-                        class="skill w-auto p-10 text-lg  h-8 flex bg-white shadow-lg font-medium text-xl mr-3 mb-5 rounded-2xl text-center items-center">
-                        <img class="w-16 object-cover mr-3" src="./assets/imgs/tailwind.png" alt="">
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/tailwind.png" alt="">
                         <span>TailwindCSS</span>
                     </div>
-                </div>
-            </div>
-            <div class="backend px-10 pb-5">
-                <div class="py-10 text-2xl font-bold">Backend</div>
-                <div class="flex flex-row">
-                    <div
-                        class="skill w-auto p-10 text-lg w-16 h-8 flex bg-white shadow-lg font-medium text-xl mr-3 mb-5 rounded-2xl text-center items-center">
-                        <img class="w-16 object-cover mr-3" src="./assets/imgs/laravel.png" alt="">
-                        <span>Laravel</span>
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/html.png" alt="">
+                        <span>HTML</span>
                     </div>
-                    <div
-                        class="skill w-auto p-10 text-lg  h-8 flex bg-white shadow-lg font-medium text-xl mr-3 mb-5 rounded-2xl text-center items-center">
-                        <img class="w-20 object-cover mr-3" src="./assets/imgs/spring.png" alt="">
-                        <span>SpringBoot</span>
-                    </div>
-                    <div
-                        class="skill w-auto p-10 text-lg  h-8 flex bg-white shadow-lg font-medium text-xl mr-3 mb-5 rounded-2xl text-center items-center">
-                        <img class="w-10 object-cover mr-3" src="./assets/imgs/dj.png" alt="">
-                        <span>Django</span>
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/css.png" alt="">
+                        <span>CSS</span>
                     </div>
                 </div>
             </div>
-            <div class="backend px-10 pb-5">
-                <div class="py-10 text-2xl font-bold">Database</div>
-                <div class="flex flex-row">
-                    <div
-                        class="skill w-auto p-10 text-lg w-16 h-8 flex bg-white shadow-lg font-medium text-xl mr-3 mb-5 rounded-2xl text-center items-center">
-                        <img class="w-16 object-cover mr-3" src="./assets/imgs/mysqlworkbench_93532.png" alt="">
+            <div class="skills-title">
+                <div class="skills-role">Backend</div>
+                <div class="skills-icons">
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/php.png" alt="">
+                        <span>PHP/Laravel</span>
+                    </div>
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/java.svg" alt="">
+                        <span>Java/SpringBoot</span>
+                    </div>
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/JavaScript-Logo.png" alt="">
+                        <span>Javascript/NodeJS</span>
+                    </div>
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/python.png" alt="">
+                        <span>Python/Django</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-title">
+                <div class="skills-role">Database</div>
+                <div class="skills-icons">
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/mysqlworkbench_93532.png" alt="">
                         <span>MySQL</span>
                     </div>
-                    <div
-                        class="skill w-auto p-10 text-lg  h-8 flex bg-white shadow-lg font-medium text-xl mr-3 mb-5 rounded-2xl text-center items-center">
-                        <img class="w-20 object-cover mr-3" src="./assets/imgs/mongodb.png" alt="">
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/mongodb.png" alt="">
                         <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-title">
+                <div class="skills-role">Other</div>
+                <div class="skills-icons">
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/jenkins.png" alt="">
+                        <span>Jenkins</span>
+                    </div>
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/cicd.png" alt="">
+                        <span>CICD</span>
+                    </div>
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/docker.png" alt="">
+                        <span>Docker</span>
+                    </div>
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/aws.png" alt="">
+                        <span>AWS</span>
+                    </div>
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/git-bash.svg" alt="">
+                        <span>GitFlow</span>
+                    </div>
+                    <div class="skills-icon">
+                        <img class="skills-img" src="./assets/imgs/firebase.png" alt="">
+                        <span>Firebase</span>
                     </div>
                 </div>
             </div>
