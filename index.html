@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="icon" type="image/svg+xml" href="./assets/imgs/avatar.png" />
+    <link rel="stylesheet" href="./src/assets/css/main.css">
+    <link rel="icon" type="image/svg+xml" href="./src/assets/imgs/avatar.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,6 +20,9 @@
             </a>
             <a href="#about">
                 About
+            </a>
+            <a href="#experience">
+                Experience
             </a>
             <a href="#projects">
                 Projects
@@ -43,7 +46,7 @@
                     </div>
                 </div>
                 <div class="avatar">
-                    <img src="./assets/imgs/avatar.png" alt="avatar" />
+                    <img src="./src/assets/imgs/avatar.png" alt="avatar" />
                 </div>
             </div>
             <p class="work-title">
@@ -65,7 +68,7 @@
         <div class="about-content">
             <div class="img-container">
                 <div>
-                    <img class="guitar" src="./assets/imgs/ava.jpg" alt="guitar-avatar">
+                    <img class="guitar" src="./src/assets/imgs/ava.jpg" alt="guitar-avatar">
                 </div>
             </div>
 
@@ -87,6 +90,54 @@
             </div>
         </div>
     </section>
+    <section id="experience" class="experience-section">
+        <div class="experience-title">
+            Experience
+        </div>
+        <div class="timeline-section">
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">07-2022</div>
+                    <div class="timeline-content">
+                        <h3>Ha Noi - DUT Hackathon</h3>
+                        <p>3-day programming contest on the topic of E-Learning. My team built website using SpringBoot
+                            and ReactJS help people learn vocabulary by flashcarrd.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">10-2022</div>
+                    <div class="timeline-content">
+                        <h3>X-Seed Coding Contest</h3>
+                        <p>The algorithm competition is organized to create a playground for students.</p>
+                        <p>3rd prize.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">03-2023</div>
+                    <div class="timeline-content">
+                        <h3>Da Nang Code Leaguage</h3>
+                        <p>The algorithm competition was organized to create a playground for students in the central
+                            region. </p>
+                        <p>Implemented by the DUT university and FPT company.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">06-2023</div>
+                    <div class="timeline-content">
+                        <h3>Sun* Intership</h3>
+                        <p>2 months training on knowledge of teamwork, git, scrum, sql, testing.
+                        </p>
+                        <p>In addition, mplementation of e-learning web with Laravel framework</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <section id="projects" class="projects">
         <div class="project">
             Projects
@@ -96,32 +147,32 @@
                 <a href="https://github.com/Tanh101/fe_nihongo" target="_blank" class="github">
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <img class="project-img" src="./assets/imgs/shibalearn.png" alt="">
+                <img class="project-img" src="./src/assets/imgs/shibalearn.png" alt="">
                 <div class="project-content">
                     <p class="project-name">Shibasensei</p>
                     <div class="icons">
                         <div class="icon">
-                            <img class="icon-img" src="./assets/imgs/laravel.png" alt="">
+                            <img class="icon-img" src="./src/assets/imgs/laravel.png" alt="">
                             <span>Laravel</span>
                         </div>
                         <div class="icon">
-                            <img class="icon-img" src="./assets/imgs/react.png" alt="">
+                            <img class="icon-img" src="./src/assets/imgs/react.png" alt="">
                             <span>ReactJS</span>
                         </div>
                         <div class="icon">
-                            <img class="icon-img" src="./assets/imgs/mysqlworkbench_93532.png" alt="">
+                            <img class="icon-img" src="./src/assets/imgs/mysqlworkbench_93532.png" alt="">
                             <span>MySQL</span>
                         </div>
                         <div class="icon">
-                            <img class="icon-img" src="./assets/imgs/flask.png" alt="">
+                            <img class="icon-img" src="./src/assets/imgs/flask.png" alt="">
                             <span>Flask</span>
                         </div>
                         <div class="icon">
-                            <img class="icon-img" src="./assets/imgs/docker.png" alt="">
+                            <img class="icon-img" src="./src/assets/imgs/docker.png" alt="">
                             <span>Docker</span>
                         </div>
                         <div class="icon">
-                            <img class="icon-img" src="./assets/imgs/aws.png" alt="">
+                            <img class="icon-img" src="./src/assets/imgs/aws.png" alt="">
                             <span>EC2</span>
                         </div>
                     </div>
@@ -137,24 +188,24 @@
                 </a>
                 <a href="https://foodngo.netlify.app/" target="_blank">
 
-                    <img class="project-img" src="./assets/imgs/foodngo1.png" alt="">
+                    <img class="project-img" src="./src/assets/imgs/foodngo1.png" alt="">
                     <div class="project-content">
                         <p class="project-name">FoodnGo</p>
                         <div class="icons">
                             <div class="icon">
-                                <img class="icon-img" src="./assets/imgs/nodejs.png" alt="">
+                                <img class="icon-img" src="./src/assets/imgs/nodejs.png" alt="">
                                 <span>NodeJS</span>
                             </div>
                             <div class="icon">
-                                <img class="icon-img" src="./assets/imgs/react.png" alt="">
+                                <img class="icon-img" src="./src/assets/imgs/react.png" alt="">
                                 <span>ReactJS</span>
                             </div>
                             <div class="icon">
-                                <img class="icon-img" src="./assets/imgs/mongodb.png" alt="">
+                                <img class="icon-img" src="./src/assets/imgs/mongodb.png" alt="">
                                 <span>MongoDB</span>
                             </div>
                             <div class="icon">
-                                <img class="icon-img" src="./assets/imgs/aws.png" alt="">
+                                <img class="icon-img" src="./src/assets/imgs/aws.png" alt="">
                                 <span>S3</span>
                             </div>
                         </div>
@@ -169,24 +220,24 @@
                 <a href="https://github.com/Tanh101/anime_video_converter" target="_blank" class="github">
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <img class="project-img" src="./assets/imgs/anime.png" alt="">
+                <img class="project-img" src="./src/assets/imgs/anime.png" alt="">
                 <div class="project-content">
                     <p class="project-name">AnimeChan</p>
                     <div class="icons">
                         <div class="icon">
-                            <img class="icon-img" src="./assets/imgs/dj.png" alt="">
+                            <img class="icon-img" src="./src/assets/imgs/dj.png" alt="">
                             <span>Django</span>
                         </div>
                         <div class="icon">
-                            <img class="icon-img" src="./assets/imgs/mysqlworkbench_93532.png" alt="">
+                            <img class="icon-img" src="./src/assets/imgs/mysqlworkbench_93532.png" alt="">
                             <span>MySQL</span>
                         </div>
                         <div class="icon">
-                            <img class="icon-img" src="./assets/imgs/flask.png" alt="">
+                            <img class="icon-img" src="./src/assets/imgs/flask.png" alt="">
                             <span>Flask</span>
                         </div>
                         <div class="icon">
-                            <img class="icon-img" src="./assets/imgs/aws.png" alt="">
+                            <img class="icon-img" src="./src/assets/imgs/aws.png" alt="">
                             <span>EC2</span>
                         </div>
                     </div>
@@ -199,20 +250,20 @@
                 <a href="https://github.com/awesome-academy/Naitei-202307-E-Learning" target="_blank" class="github">
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <img class="project-img" src="./assets/imgs/elearning.png" alt="">
+                <img class="project-img" src="./src/assets/imgs/elearning.png" alt="">
                 <div class="project-content">
                     <p class="project-name">E-Learning</p>
                     <div class="icons">
                         <div class="icon">
-                            <img class="icon-img" src="./assets/imgs/laravel.png" alt="">
+                            <img class="icon-img" src="./src/assets/imgs/laravel.png" alt="">
                             <span>Laravel</span>
                         </div>
                         <div class="icon">
-                            <img class="icon-img" src="./assets/imgs/mysqlworkbench_93532.png" alt="">
+                            <img class="icon-img" src="./src/assets/imgs/mysqlworkbench_93532.png" alt="">
                             <span>MySQL</span>
                         </div>
                         <div class="icon">
-                            <img class="icon-img" src="./assets/imgs/aws.png" alt="">
+                            <img class="icon-img" src="./src/assets/imgs/aws.png" alt="">
                             <span>EC2</span>
                         </div>
                     </div>
@@ -234,19 +285,19 @@
                 <div class="skills-role">Frontend</div>
                 <div class="skills-icons">
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/react.png" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/react.png" alt="">
                         <span>ReactJS</span>
                     </div>
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/tailwind.png" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/tailwind.png" alt="">
                         <span>TailwindCSS</span>
                     </div>
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/html.png" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/html.png" alt="">
                         <span>HTML</span>
                     </div>
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/css.png" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/css.png" alt="">
                         <span>CSS</span>
                     </div>
                 </div>
@@ -255,19 +306,19 @@
                 <div class="skills-role">Backend</div>
                 <div class="skills-icons">
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/php.png" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/php.png" alt="">
                         <span>PHP/Laravel</span>
                     </div>
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/java.svg" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/java.svg" alt="">
                         <span>Java/SpringBoot</span>
                     </div>
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/JavaScript-Logo.png" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/JavaScript-Logo.png" alt="">
                         <span>Javascript/NodeJS</span>
                     </div>
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/python.png" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/python.png" alt="">
                         <span>Python/Django</span>
                     </div>
                 </div>
@@ -277,11 +328,11 @@
                 <div class="skills-role">Database</div>
                 <div class="skills-icons">
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/mysqlworkbench_93532.png" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/mysqlworkbench_93532.png" alt="">
                         <span>MySQL</span>
                     </div>
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/mongodb.png" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/mongodb.png" alt="">
                         <span>MongoDB</span>
                     </div>
                 </div>
@@ -290,27 +341,27 @@
                 <div class="skills-role">Other</div>
                 <div class="skills-icons">
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/jenkins.png" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/jenkins.png" alt="">
                         <span>Jenkins</span>
                     </div>
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/cicd.png" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/cicd.png" alt="">
                         <span>CICD</span>
                     </div>
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/docker.png" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/docker.png" alt="">
                         <span>Docker</span>
                     </div>
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/aws.png" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/aws.png" alt="">
                         <span>AWS</span>
                     </div>
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/git-bash.svg" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/git-bash.svg" alt="">
                         <span>GitFlow</span>
                     </div>
                     <div class="skills-icon">
-                        <img class="skills-img" src="./assets/imgs/firebase.png" alt="">
+                        <img class="skills-img" src="./src/assets/imgs/firebase.png" alt="">
                         <span>Firebase</span>
                     </div>
                 </div>
@@ -341,10 +392,10 @@
                 </a>
             </div>
             <div class="contact-items">
-                <a href="https://vantanhly.io.com" target="_blank">
+                <a href="https://vantanhly.io.vn" target="_blank">
                     <div class="contact-item">
                         <i class="fa-solid fa-globe contact-icon"></i>
-                        <span>vantanhly.io.com</span>
+                        <span>vantanhly.io.vn</span>
                     </div>
                 </a>
                 <div class="contact-item">
