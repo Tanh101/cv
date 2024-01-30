@@ -638,8 +638,8 @@ a {
     }
     
     .timeline-item:nth-child(even) {
-        padding-left: 0 !important;
-        padding: 30px !important;
+        /* padding-left: 0 !important; */
+        padding: 0 0 0 37px !important;
     }
 
     .timeline-date {
