@@ -3,7 +3,6 @@ html {
     font-family: 'Popins', sans-serif;
     background-color: rgb(204, 226, 241);
     color: black;
-    scroll-behavior: smooth;
     text-decoration: none;
 }
 
@@ -54,7 +53,6 @@ a {
     display: flex;
     flex-direction: column;
     font-weight: medium;
-    transition: transform 0.5s ease-in-out;
     color: black;
 }
 
@@ -98,9 +96,9 @@ a {
 
 .work-title {
     margin: 68px 0;
-    font-size: 20px;
-    font-weight: 500;
     opacity: 0.8;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .img-container {
@@ -132,10 +130,6 @@ a {
     object-fit: contain;
 }
 
-.work-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
 
 .download-icon {
     font-size: 15px;
@@ -159,13 +153,40 @@ a {
     cursor: pointer;
 }
 
-.theme {
-    left: 0;
-    z-index: 999;
-    position: fixed;
-    cursor: pointer;
-    background-color: #0f0907;
+.content {
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: 500;
+    margin-top: 3rem;
+    overflow-x: hidden;
 }
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: extrabold;
+    justify-content: center;
+}
+
+.ava-section {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    font-size: 5rem;
+    width: 15rem;
+    height: 15rem;
+    object-fit: contain;
+}
+
 
 #about {
     font-size: 20px;
@@ -262,7 +283,7 @@ a {
     margin: 0 30px;
     background-color: white;
     border-radius: 0 0 20px 20px;
-    max-width: 25rem;
+    width: 25rem;
     margin: 2rem;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     transition: all 0.2s;
@@ -473,7 +494,6 @@ a {
     font-weight: 600;
     opacity: 0.9;
     margin: 1.5rem 0;
-
 }
 
 .timeline-item:nth-child(even) {
@@ -568,17 +588,18 @@ a {
         border-radius: 0;
         top: 0;
     }
-    
-    .nav > a {
+
+    .nav>a {
         font-size: 14px;
     }
+
     .education {
         margin-left: 1.5rem;
         width: 24rem;
         font-size: 1rem;
         font-weight: 600;
         opacity: 0.7;
-        margin: 2rem ;
+        margin: 2rem;
     }
 
     .about {
@@ -633,9 +654,9 @@ a {
 
     .timeline-item:nth-child(odd) {
         padding-right: 0 !important;
-        text-align: left !important; 
+        text-align: left !important;
     }
-    
+
     .timeline-item:nth-child(even) {
         /* padding-left: 0 !important; */
         padding: 0 0 0 37px !important;
@@ -673,11 +694,11 @@ a {
         display: none;
     }
 
-    .item {
+    /* .item {
         width: 24rem;
         height: auto;
         max-height: 24rem;
-    }
+    } */
 
     .education {
         width: 100%;
@@ -700,7 +721,7 @@ a {
         margin-top: 100px;
     }
 
-    .avatar img{
+    .avatar img {
         margin-top: 1rem;
         height: 90%;
     }
@@ -712,9 +733,26 @@ a {
     .img-container {
         max-width: 100%;
     }
+
+    .contact-section {
+        margin: 0;
+    }
+
+    .contact-items {
+        margin: 10px 10px;
+    }
+
+    .item {
+        width: 20rem;
+    }
 }
-@media only screen and (min-width: 740px) and (max-width:1023px){
+
+@media only screen and (min-width: 740px) and (max-width:1023px) {
     .skills-section {
+        margin: 0;
+    }
+
+    .contact-section {
         margin: 0;
     }
 
