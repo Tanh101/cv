@@ -713,7 +713,6 @@ a {
         max-width: 100%;
     }
 }
-
 @media only screen and (min-width: 740px) and (max-width:1023px){
     .skills-section {
         margin: 0;
